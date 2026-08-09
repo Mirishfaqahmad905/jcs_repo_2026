@@ -1,0 +1,6 @@
+{
+  "name": "Jamal College of Sciences, Mayar",
+  "description": "Complete full-stack college web application and administration management portal for Jamal College of Sciences, Mayar Dir (Lower) with JSON database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

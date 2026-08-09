@@ -1,0 +1,58 @@
+{
+  "collegeName": "Jamal College of Science, Mayar",
+  "email": {
+    "enabled": true,
+    "address": "info@jamalcollege.edu.pk",
+    "displayText": "info@jamalcollege.edu.pk",
+    "defaultSubject": "Admission Inquiry - Jamal College of Science",
+    "defaultMessage": "Respected Administration, I would like to inquire about admissions at Jamal College of Science, Mayar."
+  },
+  "phone": {
+    "enabled": true,
+    "number": "+923459001234",
+    "displayText": "+92 345 9001234"
+  },
+  "whatsapp": {
+    "enabled": true,
+    "number": "923459001234",
+    "displayNumber": "+92 345 9001234",
+    "message": "Hello Jamal College of Science, I want information regarding admissions and courses."
+  },
+  "floatingWhatsapp": {
+    "enabled": true,
+    "buttonText": "Contact on WhatsApp",
+    "number": "923459001234",
+    "message": "Hello Jamal College of Science, Mayar! I need assistance regarding admissions.",
+    "position": "bottom-right"
+  },
+  "address": {
+    "enabled": true,
+    "text": "Jamal College of Science, Main Road, Mayar, Dir Lower, Khyber Pakhtunkhwa, Pakistan"
+  },
+  "map": {
+    "enabled": true,
+    "latitude": "34.7333",
+    "longitude": "71.9500",
+    "googleMapsUrl": "https://maps.google.com/?q=Mayar+Dir+Lower+Pakistan"
+  },
+  "socialMedia": {
+    "facebook": {
+      "enabled": true,
+      "url": "https://www.facebook.com/JCSmayar/"
+    },
+    "instagram": {
+      "enabled": true,
+      "url": "https://www.instagram.com/JCSmayar/"
+    },
+    "youtube": {
+      "enabled": false,
+      "url": ""
+    },
+    "linkedin": {
+      "enabled": false,
+      "url": ""
+    }
+  },
+  "officeHours": "Monday to Saturday: 08:00 AM - 02:00 PM",
+  "admissionContact": "+92 345 9001234 / +92 333 9876543"
+}

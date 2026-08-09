@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE881"/>
+      <stop offset="30%" stop-color="#CBA135"/>
+      <stop offset="70%" stop-color="#9A7218"/>
+      <stop offset="100%" stop-color="#E8C55A"/>
+    </linearGradient>
+    <!-- Deep Navy Shield Gradient -->
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1B38"/>
+      <stop offset="100%" stop-color="#060C1B"/>
+    </linearGradient>
+    <!-- Ribbon Gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14264E"/>
+      <stop offset="50%" stop-color="#0A152E"/>
+      <stop offset="100%" stop-color="#050B19"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun Rays Behind Book -->
+  <g id="sunrays" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round">
+    <line x1="250" y1="180" x2="250" y2="120" />
+    <line x1="250" y1="180" x2="220" y2="126" />
+    <line x1="250" y1="180" x2="280" y2="126" />
+    <line x1="250" y1="180" x2="192" y2="142" />
+    <line x1="250" y1="180" x2="308" y2="142" />
+    <line x1="250" y1="180" x2="170" y2="168" />
+    <line x1="250" y1="180" x2="330" y2="168" />
+    <line x1="250" y1="180" x2="155" y2="200" />
+    <line x1="250" y1="180" x2="345" y2="200" />
+  </g>
+
+  <!-- Outer Golden Shield Outline -->
+  <path d="M250,50 L420,100 C420,280 340,400 250,450 C160,400 80,280 80,100 Z" fill="url(#goldGrad)" />
+
+  <!-- Inner Navy Shield Background -->
+  <path d="M250,62 L408,108 C408,272 332,386 250,434 C168,386 92,272 92,108 Z" fill="url(#navyGrad)" />
+
+  <!-- Inner Gold Thin Border -->
+  <path d="M250,74 L396,116 C396,264 324,372 250,418 C176,372 104,264 104,116 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.8" />
+
+  <!-- Open Book Top -->
+  <g id="open-book" transform="translate(160, 125)">
+    <!-- Pages Left -->
+    <path d="M90,55 C60,40 20,42 0,50 L0,100 C20,92 60,90 90,105 Z" fill="#FFFFFF" stroke="#1A202C" stroke-width="2" />
+    <!-- Pages Right -->
+    <path d="M90,55 C120,40 160,42 180,50 L180,100 C160,92 120,90 90,105 Z" fill="#FFFFFF" stroke="#1A202C" stroke-width="2" />
+    <!-- Book Spine & Cover -->
+    <path d="M0,100 C20,92 60,90 90,105 C120,90 160,92 180,100 L180,104 C160,96 120,94 90,109 C60,94 20,96 0,104 Z" fill="#8B0000" />
+    <!-- Lines on Book Pages -->
+    <path d="M15,62 C35,56 65,55 80,64" fill="none" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M15,72 C35,66 65,65 80,74" fill="none" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M15,82 C35,76 65,75 80,84" fill="none" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M165,62 C145,56 115,55 100,64" fill="none" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M165,72 C145,66 115,65 100,74" fill="none" stroke="#CBD5E1" stroke-width="2" />
+    <path d="M165,82 C145,76 115,75 100,84" fill="none" stroke="#CBD5E1" stroke-width="2" />
+  </g>
+
+  <!-- Ribbon Background & Fold Tail Left -->
+  <path d="M40,260 L90,225 L120,240 L70,290 L20,295 Z" fill="#0A1326" />
+  <path d="M20,295 L65,260 L40,260 Z" fill="#050B15" />
+
+  <!-- Ribbon Fold Tail Right -->
+  <path d="M460,260 L410,225 L380,240 L430,290 L480,295 Z" fill="#0A1326" />
+  <path d="M480,295 L435,260 L460,260 Z" fill="#050B15" />
+
+  <!-- Main Dark Blue Ribbon Band Across Center -->
+  <path d="M60,225 C180,200 320,200 440,225 C450,265 440,295 430,305 C310,280 190,280 70,305 C60,295 50,265 60,225 Z" fill="url(#ribbonGrad)" stroke="url(#goldGrad)" stroke-width="3" />
+
+  <!-- Text on Ribbon: JAMAL COLLEGE -->
+  <text x="250" y="262" font-family="'Times New Roman', serif, Georgia" font-weight="bold" font-size="34" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">JAMAL COLLEGE</text>
+
+  <!-- Text Below Ribbon: OF SCIENCES -->
+  <text x="250" y="340" font-family="'Times New Roman', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="3">OF SCIENCES</text>
+
+  <!-- Subtitle Text: MAYAR DIR (L) -->
+  <text x="250" y="375" font-family="'Arial', sans-serif" font-weight="bold" font-size="18" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">MAYAR DIR (L)</text>
+</svg>

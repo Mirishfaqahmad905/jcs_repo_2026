@@ -1,0 +1,10 @@
+{
+  "collegeName": "Jamal College of Sciences, Mayar",
+  "logoUrl": "/logo.png",
+  "websiteTitle": "Jamal College of Sciences, Mayar",
+  "description": "Official portal for Jamal College of Sciences, Mayar Dir Lower.",
+  "popupEnabled": true,
+  "popupDelay": 3000,
+  "popupMessage": "Welcome to the official portal of Jamal College of Sciences, Mayar. Admissions are open for the current academic session!",
+  "theme": "blue-gold"
+}

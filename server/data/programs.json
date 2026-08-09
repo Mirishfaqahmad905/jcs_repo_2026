@@ -1,0 +1,34 @@
+[
+  {
+    "id": "prog-001",
+    "name": "Pre-Medical (F.Sc)",
+    "description": "Designed for students aspiring to pursue MBBS, BDS, Pharmacy, Biotechnology, and Allied Health Sciences.",
+    "eligibility": "Matriculation with Science (Minimum 60% Marks)",
+    "duration": "2 Years (Part-I & Part-II)",
+    "status": "active"
+  },
+  {
+    "id": "prog-002",
+    "name": "Pre-Engineering (F.Sc)",
+    "description": "Comprehensive preparation for engineering disciplines including Electrical, Civil, Mechanical, and Software Engineering.",
+    "eligibility": "Matriculation with Science (Minimum 60% Marks)",
+    "duration": "2 Years (Part-I & Part-II)",
+    "status": "active"
+  },
+  {
+    "id": "prog-003",
+    "name": "Computer Science (ICS)",
+    "description": "Focuses on Computer Science, Physics/Statistics, and Mathematics for future tech leaders and software engineers.",
+    "eligibility": "Matriculation with Science or Computer Science (Minimum 50% Marks)",
+    "duration": "2 Years (Part-I & Part-II)",
+    "status": "active"
+  },
+  {
+    "id": "prog-004",
+    "name": "Humanities & Arts (F.A)",
+    "description": "A versatile program covering Islamic Studies, Civics, Economics, and English Literature.",
+    "eligibility": "Matriculation (Arts or Science)",
+    "duration": "2 Years (Part-I & Part-II)",
+    "status": "active"
+  }
+]
