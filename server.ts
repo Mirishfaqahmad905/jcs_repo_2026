@@ -7,31 +7,31 @@ import authRoutes from './server/routes/auth.routes';
 import publicRoutes from './server/routes/public.routes';
 import adminRoutes from './server/routes/admin.routes';
 
-async function startServer() {
-  // Initialize default JSON store & default seed data if needed
-  await initializeSeedData();
+// Synchronously/Async initialize data store seeds
+initializeSeedData().catch(err => console.error('Seed error:', err));
 
-  const app = express();
-  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+const app = express();
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
-  // Middlewares
-  app.use(cors());
-  // Express body parser with 20MB limit for image uploads (base64)
-  app.use(express.json({ limit: '20mb' }));
-  app.use(express.urlencoded({ extended: true, limit: '20mb' }));
+// Middlewares
+app.use(cors());
+// Express body parser with 20MB limit for image uploads (base64)
+app.use(express.json({ limit: '20mb' }));
+app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
-  // API Routes FIRST
-  app.use('/api/auth', authRoutes);
-  app.use('/api', publicRoutes);
-  app.use('/api/admin', adminRoutes);
+// API Routes FIRST
+app.use('/api/auth', authRoutes);
+app.use('/api', publicRoutes);
+app.use('/api/admin', adminRoutes);
 
-  // Healthcheck
-  app.get('/api/health', (_req, res) => {
-    res.json({ status: 'ok', college: 'Jamal College of Sciences, Mayar' });
-  });
+// Healthcheck
+app.get('/api/health', (_req, res) => {
+  res.json({ status: 'ok', college: 'Jamal College of Sciences, Mayar' });
+});
 
-  // Vite development middleware vs production static serving
-  if (process.env.NODE_ENV !== 'production') {
+// Vite development middleware vs production static serving
+async function setupViteOrStatic() {
+  if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
@@ -44,7 +44,12 @@ async function startServer() {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
+}
 
+setupViteOrStatic().catch(err => console.error('Vite/Static setup error:', err));
+
+// Start server if NOT running on Vercel serverless platform
+if (!process.env.VERCEL) {
   app.listen(PORT, '0.0.0.0', () => {
     console.log(`====================================================`);
     console.log(`🎓 Jamal College of Sciences, Mayar Server Running!`);
@@ -53,7 +58,5 @@ async function startServer() {
   });
 }
 
-startServer().catch(err => {
-  console.error('Failed to start server:', err);
-  process.exit(1);
-});
+export default app;
+
