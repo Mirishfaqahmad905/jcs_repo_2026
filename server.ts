@@ -12,7 +12,7 @@ async function startServer() {
   await initializeSeedData();
 
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   // Middlewares
   app.use(cors());
